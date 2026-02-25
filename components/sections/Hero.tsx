@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
         <source src={"https://image.uniqlo.com/UQ/CMS/video/jp/2026/HOME/GL_Aseets/PJ/CPJ/Mainlaunch/PC_MEN.mp4"} type="video/mp4" />
       </video>
       <div className="absolute inset-0 w-full h-full z-10 flex flex-col justify-center items-start gap-5 p-8">
-        <div className="max-w-3xl space-y-4">
-          <h1 className="text-white font-bold text-6xl tracking-widest text-shadow-sm">WE HAVE EVERYTHING YOU WANT</h1>
-          <p className="text-lg text-neutral-100 font-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ullam, vel blanditiis culpa earum sequi officia, eius ab quia reprehenderit quaerat iste at mollitia aspernatur a unde, officiis voluptas cupiditate!</p>
+        <div className="max-w-4xl space-y-4">
+          <h1 className="text-white font-bold text-5xl tracking-widest text-shadow-sm">FROM EVERYDAY ESSENTIALS TO STATEMENT PIECES, YOUR WARDROBE UPGRADE STARTS AT KANJI.</h1>
+          <p className="text-lg text-neutral-100 font-normal">Discover the latest trends and express your unique style with our curated collection of clothing and accessories. At Kanji, we believe that fashion is more than just what you wear—it's a way to tell your story.</p>
           <div className="flex items-center gap-2 mt-2">
             <InteractiveHoverButton >Get Started</InteractiveHoverButton>
             <Button variant={"default"} size={'lg'} className='rounded-full hover:text-neutral-300 hover:bg-neutral-950 cursor-pointer'>Login</Button>
