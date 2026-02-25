@@ -22,7 +22,7 @@ export interface IProduct {
   name: string;
   category: string;
   image: {
-    src: string;
+    src: any;
     alt: string;
   };
   rating: number;
@@ -40,7 +40,7 @@ export type IBestChoice = IProduct;
 
 export interface INavbar {
   logo: {
-    src: string;
+    src: any;
     alt: string;
   };
   navLinks: { label: string; href: string; }[];
@@ -64,7 +64,7 @@ export interface IHero {
     href: string;
   };
   video: {
-    src: string;
+    src: any;
     type: string;
   };
 }
@@ -76,7 +76,7 @@ export interface IBrand {
 
 export interface IFooter {
   logo: {
-    src: string;
+    src: any;
     alt: string;
   };
   companyLinks: { label: string; href: string; }[];

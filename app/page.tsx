@@ -6,17 +6,19 @@ import Footer from '@/components/sections/Footer';
 import Hero from '@/components/sections/Hero';
 import NewArrivals from '@/components/sections/NewArrivals';
 import Navbar from "@/components/widgets/Navbar";
+import AboutSection from '@/components/sections/About';
 
 export default function Home() {
   return (
     <main className='relative'>
       <Navbar />
       <Hero />
+      <Brands />
+      <AboutSection />
       <BigSales />
       <BestSeller />
       <BestChoice />
       <NewArrivals />
-      <Brands />
       <Footer />
     </main>
   );

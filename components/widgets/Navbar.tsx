@@ -92,61 +92,61 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-        <header
+      <header
         onMouseLeave={handleMouseLeave}
         className={`fixed top-0 inset-x-0 w-full z-50 transition-all duration-300 ${navbarClasses}`}
-        >
+      >
         <div className="container mx-auto px-6 py-2 flex justify-between items-center">
-            <div className="flex items-center gap-20">
+          <div className="flex items-center gap-20">
             <div className="font-bold text-2xl tracking-widest">
-                KANJI
+              KANJI
             </div>
             <nav className="hidden md:flex items-center space-x-5">
-                {(Object.keys(menuData) as MenuKey[]).map((menu) => (
+              {(Object.keys(menuData) as MenuKey[]).map((menu) => (
                 <div key={menu} onMouseEnter={() => handleMouseEnter(menu)} className="py-3 px-2 cursor-pointer">
-                    <span className={`transition-colors duration-300 ${isOpaque ? 'hover:text-gray-500' : 'hover:text-gray-300'}`}>
+                  <span className={`transition-colors duration-300 ${isOpaque ? 'hover:text-gray-500' : 'hover:text-gray-300'}`}>
                     {menu}
-                    </span>
+                  </span>
                 </div>
-                ))}
+              ))}
             </nav>
-            </div>
-            <div className="flex items-center space-x-6">
-                <button onClick={handleSearchToggle} className="cursor-pointer">
-                    <Search />
-                </button>
-                <ShoppingBag className="cursor-pointer" />
-                <User className="cursor-pointer" />
-            </div>
+          </div>
+          <div className="flex items-center space-x-6">
+            <button onClick={handleSearchToggle} className="cursor-pointer">
+              <Search />
+            </button>
+            <ShoppingBag className="cursor-pointer" />
+            <User className="cursor-pointer" />
+          </div>
         </div>
 
         <div
-            ref={menuWrapperRef}
-            onMouseEnter={() => activeMenu && handleMouseEnter(activeMenu)}
-            className="absolute top-full left-0 w-full bg-white text-black border-b border-gray-200 shadow-lg overflow-hidden h-0 invisible"
+          ref={menuWrapperRef}
+          onMouseEnter={() => activeMenu && handleMouseEnter(activeMenu)}
+          className="absolute top-full left-0 w-full bg-white text-black border-b border-gray-200 shadow-lg overflow-hidden h-0 invisible"
         >
-            <div className="w-full ms-auto py-4">
+          <div className="w-full ms-auto py-4">
             <div ref={menuContentRef} className="container mx-auto px-6 grid grid-cols-5 gap-8 pb-6">
-                {activeMenu &&
+              {activeMenu &&
                 menuData[activeMenu].map((section, index) => (
-                    <div key={index} className='space-y-4'>
+                  <div key={index} className='space-y-4'>
                     <h3 className="font-normal text-md mb-4 text-gray-500">{section.title}</h3>
                     <ul>
-                        {section.links.map((link, linkIndex) => (
+                      {section.links.map((link, linkIndex) => (
                         <li key={linkIndex} className="mb-2">
-                            <Link href="#" className="text-sm font-thin text-gray-700 hover:text-black transition-colors duration-300">
+                          <Link href="#" className="text-sm font-thin text-gray-700 hover:text-black transition-colors duration-300">
                             {link}
-                            </Link>
+                          </Link>
                         </li>
-                        ))}
+                      ))}
                     </ul>
-                    </div>
+                  </div>
                 ))}
             </div>
-            </div>
+          </div>
         </div>
-        </header>
-        {isSearchOpen && <SearchWidget onClose={handleSearchToggle} />}
+      </header>
+      {isSearchOpen && <SearchWidget onClose={handleSearchToggle} />}
     </>
   );
 };

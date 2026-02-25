@@ -1,3 +1,4 @@
+// BRAND ICONS
 import nikeIcon from '../../assets/icons/nike.svg'
 import adidasIcon from '../../assets/icons/adidas.svg'
 import pumaIcon from '../../assets/icons/puma.svg'
@@ -10,6 +11,22 @@ import balenciagaIcon from '../../assets/icons/balenciaga.svg'
 import calvinKleinIcon from '../../assets/icons/calvin-klein.svg'
 import converseIcon from '../../assets/icons/converse.svg'
 import zimmermannIcon from '../../assets/icons/zimmermann.svg'
+
+// PRODUCT IMAGES
+import AviatorSunglassesImage from "../../assets/images/aviator-sunglasses-kanji.jpg";
+import CargoShortImage from "../../assets/images/cargo-shorts-kanji.png";
+import ClassicWhiteTeeImage from "../../assets/images/classic-white-tee-kanji.png";
+import DistressedJeansImage from "../../assets/images/distressed-jeans-kanji.png";
+import GraphicHoodieImage from "../../assets/images/graphic-hoodie-kanji.png";
+import LeatherBeltImage from "../../assets/images/leather-belt-kanji.png";
+import LeatherJacketImage from "../../assets/images/leather-jacket-kanji.png";
+import LinenShirtImage from "../../assets/images/linen-shirt-kanji.png";
+import OversizedTShirtImage from "../../assets/images/oversized-t-shirt-kanji.png";
+import SlimFitChinosImage from "../../assets/images/slim-fit-chinos.png";
+import SummerDressImage from "../../assets/images/summer-dress-kanji.png";
+import UrbanBackpackImage from "../../assets/images/urban-backpack-kanji.png";
+import WoolPeacotImage from "../../assets/images/wool-peacot-kanji.png";
+
 import { IBestChoice, IBestSeller, IBigSale, IBrand, IFooter, IHero, INavbar, INewArrival, IMenuData } from "@/types/interfaces";
 
 export const navbarData: INavbar = {
@@ -71,7 +88,7 @@ export const newArrivalsData: INewArrival[] = [
       id: 1,
       name: 'Oversized Tee',
       category: 'T-Shirts',
-      image: { src: 'https://placehold.co/400x400/000000/FFFFFF/png?text=Oversized+Tee', alt: 'Oversized Tee' },
+      image: { src: OversizedTShirtImage, alt: 'Oversized Tee' },
       rating: 4.5,
       reviews: 150,
       price: 25.00,
@@ -81,7 +98,7 @@ export const newArrivalsData: INewArrival[] = [
       id: 2,
       name: 'Distressed Jeans',
       category: 'Jeans',
-      image: { src: 'https://placehold.co/400x400/1E90FF/FFFFFF/png?text=Distressed+Jeans', alt: 'Distressed Jeans' },
+      image: { src: DistressedJeansImage, alt: 'Distressed Jeans' },
       rating: 4.7,
       reviews: 200,
       price: 75.00,
@@ -91,7 +108,7 @@ export const newArrivalsData: INewArrival[] = [
       id: 3,
       name: 'Linen Shirt',
       category: 'Shirts',
-      image: { src: 'https://placehold.co/400x400/FFFFFF/000000/png?text=Linen+Shirt', alt: 'Linen Shirt' },
+      image: { src: LinenShirtImage, alt: 'Linen Shirt' },
       rating: 4.6,
       reviews: 180,
       price: 45.00,
@@ -102,7 +119,7 @@ export const newArrivalsData: INewArrival[] = [
       id: 4,
       name: 'Cargo Shorts',
       category: 'Shorts',
-      image: { src: 'https://placehold.co/400x400/32CD32/FFFFFF/png?text=Cargo+Shorts', alt: 'Cargo Shorts' },
+      image: { src: CargoShortImage, alt: 'Cargo Shorts' },
       rating: 4.4,
       reviews: 120,
       price: 40.00,
@@ -115,7 +132,7 @@ export const newArrivalsData: INewArrival[] = [
       id: 1,
       name: 'Summer Dress',
       category: 'Dresses',
-      image: { src: 'https://placehold.co/400x400/FF69B4/FFFFFF/png?text=Summer+Dress', alt: 'Summer Dress' },
+      image: { src: SummerDressImage, alt: 'Summer Dress' },
       rating: 4.8,
       reviews: 300,
       price: 50.00,
@@ -126,7 +143,7 @@ export const newArrivalsData: INewArrival[] = [
       id: 2,
       name: 'Leather Jacket',
       category: 'Jackets',
-      image: { src: 'https://placehold.co/400x400/8B4513/FFFFFF/png?text=Leather+Jacket', alt: 'Leather Jacket' },
+      image: { src: LeatherJacketImage, alt: 'Leather Jacket' },
       rating: 4.9,
       reviews: 400,
       price: 150.00,
@@ -137,7 +154,7 @@ export const newArrivalsData: INewArrival[] = [
       id: 3,
       name: 'Graphic Hoodie',
       category: 'Hoodies',
-      image: { src: 'https://placehold.co/400x400/C0C0C0/000000/png?text=Graphic+Hoodie', alt: 'Graphic Hoodie' },
+      image: { src: GraphicHoodieImage, alt: 'Graphic Hoodie' },
       rating: 4.4,
       reviews: 130,
       price: 60.00,
@@ -151,7 +168,7 @@ export const newArrivalsData: INewArrival[] = [
         id: 1,
         name: 'Classic White Tee',
         category: 'T-Shirts',
-        image: { src: 'https://placehold.co/400x400/FFFFFF/000000/png?text=Classic+White+Tee', alt: 'Classic White Tee' },
+        image: { src: ClassicWhiteTeeImage, alt: 'Classic White Tee' },
         rating: 4.9,
         reviews: 500,
         price: 20.00,
@@ -160,7 +177,7 @@ export const newArrivalsData: INewArrival[] = [
         id: 2,
         name: 'Slim Fit Chinos',
         category: 'Pants',
-        image: { src: 'https://placehold.co/400x400/D2B48C/000000/png?text=Slim+Fit+Chinos', alt: 'Slim Fit Chinos' },
+        image: { src: SlimFitChinosImage, alt: 'Slim Fit Chinos' },
         rating: 4.8,
         reviews: 450,
         price: 55.00,
@@ -169,7 +186,7 @@ export const newArrivalsData: INewArrival[] = [
         id: 3,
         name: 'Wool Peacoat',
         category: 'Coats',
-        image: { src: 'https://placehold.co/400x400/A0A0A0/000000/png?text=Wool+Peacoat', alt: 'Wool Peacoat' },
+        image: { src: WoolPeacotImage, alt: 'Wool Peacoat' },
         rating: 4.8,
         reviews: 220,
         price: 120.00,
@@ -181,7 +198,7 @@ export const bestChoices: IBestChoice[] = [
     id: 1,
     name: 'Urban Backpack',
     category: 'Accessories',
-    image: { src: 'https://placehold.co/400x400/808080/FFFFFF/png?text=Urban+Backpack', alt: 'Urban Backpack' },
+    image: { src: UrbanBackpackImage, alt: 'Urban Backpack' },
     rating: 4.7,
     reviews: 250,
     price: 65.00,
@@ -190,7 +207,7 @@ export const bestChoices: IBestChoice[] = [
     id: 2,
     name: 'Aviator Sunglasses',
     category: 'Accessories',
-    image: { src: 'https://placehold.co/400x400/000000/FFFFFF/png?text=Aviator+Sunglasses', alt: 'Aviator Sunglasses' },
+    image: { src: AviatorSunglassesImage, alt: 'Aviator Sunglasses' },
     rating: 4.9,
     reviews: 350,
     price: 35.00,
@@ -199,7 +216,7 @@ export const bestChoices: IBestChoice[] = [
     id: 3,
     name: 'Leather Belt',
     category: 'Accessories',
-    image: { src: 'https://placehold.co/400x400/8B4513/FFFFFF/png?text=Leather+Belt', alt: 'Leather Belt' },
+    image: { src: LeatherBeltImage, alt: 'Leather Belt' },
     rating: 4.8,
     reviews: 300,
     price: 30.00,

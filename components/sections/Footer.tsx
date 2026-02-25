@@ -4,25 +4,27 @@ import React from 'react';
 import FooterLabelImage from "../../assets/images/kanji-lable-footer.v2.svg"
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="w-full px-6 sm:px-12 md:px-20 py-10 space-y-10">
       <div className="w-full flex items-center justify-between">
         <div className="space-y-1">
           <span className="text-sm font-thin text-neutral-300">Contact us at</span>
-          <p className="text-md font-normal">kanji.in.studio@gmail.com</p>
+          <p className="text-md font-normal">support@kanjimarket.com</p>
         </div>
         <div className="flex items-center gap-4">
-          <Link href={"/"} className="">
-            <span className="text-sm font-medium">How It Works</span>
+          <Link href={"/shop"} className="">
+            <span className="text-sm font-medium">Shop</span>
           </Link>
-          <Link href={"/"} className="">
-            <span className="text-sm font-medium">Benefits</span>
+          <Link href={"/new-arrivals"} className="">
+            <span className="text-sm font-medium">New Arrivals</span>
           </Link>
-          <Link href={"/"} className="">
-            <span className="text-sm font-medium">Teams</span>
+          <Link href={"/about"} className="">
+            <span className="text-sm font-medium">About Us</span>
           </Link>
-          <Link href={"/"} className="">
-            <span className="text-sm font-medium">Features</span>
+          <Link href={"/contact"} className="">
+            <span className="text-sm font-medium">Contact</span>
           </Link>
         </div>
       </div>
@@ -30,16 +32,19 @@ const Footer = () => {
         <Image src={FooterLabelImage} alt={"Footer Label Image"} width={1440} height={720} className='w-full h-auto object-cover z-5'/>
       </div>
       <div className="w-full flex items-center justify-between">
-        <span className="text-sm text-neutral-300 font-normal">&copy; 2026 Kanji in Studio. All rights reserved.</span>
+        <span className="text-sm text-neutral-300 font-normal">&copy; {currentYear} Kanji Market. All rights reserved.</span>
         <div className="flex items-center gap-4">
           <Link href="/" className='hover:underline hover:text-neutral-400 transition-all'>
-            <span className="text-sm text-neutral-300 font-normal">LinkedIn</span>
+            <span className="text-sm text-neutral-300 font-normal">Facebook</span>
           </Link>
           <Link href="/" className='hover:underline hover:text-neutral-400 transition-all'>
             <span className="text-sm text-neutral-300 font-normal">Instagram</span>
           </Link>
           <Link href="/" className='hover:underline hover:text-neutral-400 transition-all'>
-            <span className="text-sm text-neutral-300 font-normal">YouTube</span>
+            <span className="text-sm text-neutral-300 font-normal">X</span>
+          </Link>
+          <Link href="/" className='hover:underline hover:text-neutral-400 transition-all'>
+            <span className="text-sm text-neutral-300 font-normal">Pinterest</span>
           </Link>
         </div>
       </div>

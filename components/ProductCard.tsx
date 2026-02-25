@@ -22,12 +22,12 @@ const ProductCard = ({ product }: { product: IProduct }) => {
 
   return (
     <div className="bg-white text-gray-800 rounded-xl shadow-sm overflow-hidden group transition-all duration-300 hover:shadow-lg">
-      <div className="relative">
+      <div className="relative w-full h-[480px]">
         <Image
           src={product.image.src}
           alt={product.image.alt}
           width={400}
-          height={400}
+          height={520}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         {product.isNew && (
